@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Enemy Rain Shooting Game [[beta version]]</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="#"> <!--사운드 추가후 favicon.ico오류 404메세지 이걸로 해결됨.-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+      </div>
+      <div class="score">
+        <span class="scoreLeft">Score : <span class="yourScore"></span></span>
+        <span class="scoreRight"></span>High:<span class="high"></span>
+      </div>
+      <div class="playgame">
+        <div class="start-bg" id ="start">
+          <button type="button" class="start-btn">
+            <div>GAME START</div>
+          </button>
+        </div>
+        <div id="bg">
+          <div id="hero"></div>
+        </div>
+      </div>
+      <div class="howToPlay">이동 : 방향키 공격 : 스페이스바</div>
+    </div>
+    <script src="hero.js" async></script>
+    <script src="enemy.js"></script>
+    <script src="init.js"></script>
+  </body>
+</html>
