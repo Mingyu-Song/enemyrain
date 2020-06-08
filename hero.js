@@ -16,6 +16,12 @@ let yourScore = document.getElementsByClassName('yourScore')[0]; //업데이트 
 let highScore = document.querySelector('.high');    //최고점수 입력되는 곳
 
 
+let clickBtn = () => {
+    startBtn.style.transform = "translateY(5px)";
+    startBtn.style.boxShadow = "0px 0px 3px 1px rgba(3, 3, 3, 0.425)";
+}
+startBgd.addEventListener('mousedown', clickBtn);
+
 
 //     시작시 , 스타트버튼 누를시 작동하는 함수
 let start = () => {
